@@ -1,0 +1,58 @@
+html{
+  font-size: 16px;
+}
+ 
+ .keys{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ }
+
+ .numkey,.operator{
+   height: 13vh;
+   outline: none;
+   border: 0.5px solid lightgray;
+   font-size: 2rem;
+ }
+ .numkey:active, .operator:active{
+   background-color: lightgray;
+   color: black;
+ }
+ .operator{
+   background-color: #E6E6E6;
+   color: #00ACC2;
+ }
+ .numkey{
+   background-color: #FCFCFC;
+ }
+ #plus,#minus{
+   grid-column: 1/span 2;
+   height: 13vh;
+ }
+ #minus{
+   grid-column-start: 3;
+ }
+ 
+ #equal{
+  grid-row: 4 / span 2;
+  grid-column: 4/5;
+  height: 26vh;
+  background-color: #00ACC2;
+  color: white;
+ }
+
+.screen{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 26vh;
+  font-size: 4rem;
+}
+body{
+  margin: 0;
+  height: 90vh;
+}
+.display{
+  margin-right: 10px;
+}
